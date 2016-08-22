@@ -1,0 +1,12 @@
+# Site settings
+title: Growler
+email: hello@growl.beer
+description: >
+  Keg management and analytics for the modern office
+baseurl: ""
+url: "http://growl.beer"
+# Build settings
+markdown: kramdown
+sass:
+    style: :compressed
+    sass_dir: _sass
