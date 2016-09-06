@@ -1,53 +1,47 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
+# Front Matter comment for Jekyll
 ---
 @charset "utf-8";
 
+// Fonts
+@import "https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i|Raleway:400,400i|Work+Sans:500";
+$libre: 'Libre Baskerville', serif;
+$raleway: 'Raleway', sans-serif;
+$work: 'Work Sans', sans-serif;
 
+// Variables
+$paragraph-font-family: 	$raleway;
+$header-font-family: 		$libre;
+$sub-header-font-family:    $work;
+$base-font-size:   			16px;
+$small-font-size:  			$base-font-size * 0.875;
+$large-font-size:  			$base-font-size * 1.25;
+$xlarge-font-size: 			$base-font-size * 1.5;
+$xxlarge-font-size: 		$base-font-size * 3.0;
+$base-line-height: 			1.5;
 
-// Our variables
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$base-font-weight: 400;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
+$spacing-unit:     			30px;
 
-$spacing-unit:     30px;
+$white: 					#FFFFFF;
+$grayLight: 				#EEEEEE;
+$tan: 						#B28C67;
+$brownLight: 				#6B5144;
+$brown: 					#5F3400;
+$orange: 					#D34B14;
+$black: 					#2C2C2C;
 
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+$content-width:				1000px;	
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
-
-// Width of the content area
-$content-width:    800px;
-
-$on-palm:          600px;
-$on-laptop:        800px;
-
-
-
-// Use media queries like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
-}
-
+// Breakpoint Widths
+$device-large:	   			1200px;			
+$device-medium:    			900px;
+$device-small:     			600px;
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-        "base",
-        "layout",
-        "syntax-highlighting"
+    "normalize",
+    "base",
+    "hero",
+    "layout"
 ;
