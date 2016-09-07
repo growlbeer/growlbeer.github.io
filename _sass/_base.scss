@@ -214,32 +214,15 @@ li {
  * Links
  */
 a {
-    color: $blueLight;
+    color: $orange;
     text-decoration: none;
     @include transition(all, 0.2s, linear);
     &:hover {
-        color: darken($blueLight, 15%);
+        color: darken($orange, 15%);
         text-decoration: none;
         @include transition(all, 0.2s, linear);
     }
 }
-
-/**
- * Blockquotes
- */
-blockquote {
-    color: $grayDark;
-    border-left: 4px solid $grayLight;
-    padding-left: $spacing-unit / 2;
-    font-size: $large-font-size;
-    letter-spacing: -1px;
-
-    > :last-child {
-        margin-bottom: 0;
-    }
-}
-
-
 
 /**
  * Code formatting
